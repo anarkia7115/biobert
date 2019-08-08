@@ -4,7 +4,7 @@ COPY ./requirements.txt /bioner/requirements.txt
 
 WORKDIR /bioner
 
-RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY . /bioner
 
