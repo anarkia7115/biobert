@@ -1,7 +1,7 @@
 set -e
 set -x
 
-image_name="bioner"
+image_name="biobert"
 image_version=0.1
 image_name=$image_name:$image_version
 
