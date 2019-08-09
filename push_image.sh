@@ -2,7 +2,7 @@ set -e
 set -x
 
 image_name="biobert"
-image_version=0.1
+image_version=0.1-gpu
 image_name=$image_name:$image_version
 
 docker build \
