@@ -14,7 +14,7 @@ ARG SK
 
 ENV AK $AK
 ENV SK $SK
-ENV HW_OBS_ENDPOINT obs.cn-north-1.myhwclouds.com
+ENV HW_OBS_ENDPOINT obs.cn-north-4.myhwclouds.com
 
 # obsutil
 RUN wget https://obs-community.obs.cn-north-1.myhuaweicloud.com/obsutil/current/obsutil_linux_amd64.tar.gz
