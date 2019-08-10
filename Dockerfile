@@ -1,4 +1,5 @@
-FROM python:3.6
+#FROM python:3.6
+FROM tensorflow/tensorflow:latest-gpu
 
 COPY ./requirements.txt /biobert/requirements.txt
 
@@ -14,7 +15,9 @@ ARG SK
 
 ENV AK $AK
 ENV SK $SK
-ENV HW_OBS_ENDPOINT obs.cn-north-4.myhwclouds.com
+ENV HW_OBS_ENDPOINT obs.cn-north-1.myhwclouds.com
+
+RUN apt-get update && apt-get install -y wget && apt-get clean
 
 # obsutil
 RUN wget https://obs-community.obs.cn-north-1.myhuaweicloud.com/obsutil/current/obsutil_linux_amd64.tar.gz
